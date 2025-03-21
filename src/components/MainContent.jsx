@@ -16,11 +16,8 @@ export default function HeroSection() {
           viewport={{ once: true }}
         >
         {/* <div className="lg:w-1/2 mt-8 lg:mt-0"> */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading mb-4">
-            Thomas Colenbie
-          </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-sans mb-6">
-            Expertise en Immobilier & États des Lieux Locatifs
+            Expert en Immobilier & États des Lieux Locatifs
           </h2>
           <div className="text-base md:text-lg font-sans mb-6">
             <p>

@@ -44,7 +44,7 @@ export default function CTASection() {
             {/* Blurred Content */}
             <div className="filter blur-[2px]">
               <h3 className="text-3xl md:text-4xl mb-6">
-                Une prise de rendez-vous facile et à votre écoute.
+                Une prise de rendez-vous en ligne facile
               </h3>
               <button
                 className="bg-[#5B7083] text-white text-xl px-16 py-5 rounded-md transition-colors w-full font-sans opacity-50 cursor-not-allowed"
