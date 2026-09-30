@@ -1,37 +1,1005 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expertimmotc</title>
-    <meta name="google-site-verification" content="qmSZ7y64wJb6go3jXdytHadc4YtYIJcEbLl17cPxJYw" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXPERTIMMOTC — États des lieux & expertises immobilières | Brabant wallon, Bruxelles</title>
+<meta name="description" content="États des lieux, expertises et estimations immobilières dans le Brabant wallon et à Bruxelles. Thomas Colenbie, expert IPI 505091.">
+<link rel="canonical" href="https://expertimmotc.be/">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#2D4052">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EXPERTIMMOTC">
+<meta property="og:title" content="EXPERTIMMOTC — États des lieux & expertises immobilières">
+<meta property="og:description" content="États des lieux, expertises et estimations immobilières dans le Brabant wallon et à Bruxelles. Thomas Colenbie, expert IPI 505091.">
+<meta property="og:url" content="https://expertimmotc.be/">
+<meta property="og:image" content="https://expertimmotc.be/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_BE">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#2D4052;
+    --navy-deep:#1c2c3a;
+    --orange:#e8792f;
+    --orange-deep:#c9631f;
+    --paper:#f7f4ee;
+    --paper-line:#e2dccd;
+    --card:#ffffff;
+    --ink:#21262b;
+    --ink-soft:#5c6570;
+    --success:#3a7d5c;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'IBM Plex Sans', sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;}
+  h1,h2,h3,h4{font-family:'Fraunces', serif;font-weight:600;color:var(--navy);margin:0 0 .5em;letter-spacing:-.01em;}
+  p{margin:0 0 1em;color:var(--ink-soft);}
+  a{color:inherit;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  section{padding:88px 0;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-deep);font-weight:500;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--orange);}
 
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#2D4052" />
+  header{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--paper-line);}
+  .nav{max-width:1120px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{height:44px;width:44px;object-fit:contain;}
+  .brand .bt{display:flex;flex-direction:column;line-height:1.1;}
+  .brand .name{font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:var(--navy);letter-spacing:-.01em;}
+  .brand .tag{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.07em;color:var(--ink-soft);text-transform:uppercase;margin-top:2px;}
+  nav.links{display:flex;gap:30px;align-items:center;}
+  nav.links a{text-decoration:none;font-size:14.5px;color:var(--ink);font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:.2s;}
+  nav.links a:hover{border-color:var(--orange);}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;border:none;padding:12px 22px;border-radius:8px;font-weight:600;font-size:14.5px;text-decoration:none;cursor:pointer;transition:.2s;font-family:'IBM Plex Sans',sans-serif;}
+  .btn:hover{background:var(--orange-deep);transform:translateY(-1px);}
+  .btn.whatsapp{background:#25D366;}
+  .btn.whatsapp:hover{background:#1ebc59;}
+  .btn.icon{padding:12px 16px;}
+  .header-actions{display:flex;gap:10px;align-items:center;}
+  .rdv-short{display:none;}
+  .btn.ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy);}
+  .btn.ghost:hover{background:var(--navy);color:#fff;}
+  .btn:disabled{opacity:.4;cursor:not-allowed;transform:none;}
 
-    <meta
-      name="description"
-      content="Expert en immobilier et états des lieux locatifs. États des lieux précis et impartiaux, expertises conformes au marché, rapports clairs et tarification transparente."
-    />
-    <link rel="canonical" href="https://expertimmotc.be/" />
+  .hero{padding:80px 0 76px;position:relative;overflow:hidden;}
+  .hero .wrap{max-width:720px;}
+  .hero h1{font-size:44px;line-height:1.08;max-width:620px;}
+  .hero h1 em{font-style:normal;color:var(--orange);}
+  .hero .lede{font-size:17px;max-width:480px;}
+  .hero-cta{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;}
+  .trust-row{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap;}
+  .trust-row .t{display:flex;flex-direction:column;}
+  .trust-row .t b{font-family:'Fraunces',serif;font-size:26px;color:var(--navy);}
+  .trust-row .t span{font-size:12px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
 
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="TC Expertimmo" />
-    <meta property="og:title" content="Expertimmotc — États des lieux & expertises immobilières" />
-    <meta
-      property="og:description"
-      content="Expert en immobilier et états des lieux locatifs. États des lieux précis et impartiaux, expertises conformes au marché, rapports clairs et tarification transparente."
-    />
-    <meta property="og:url" content="https://expertimmotc.be/" />
-    <meta property="og:image" content="https://expertimmotc.be/og-image.jpg" />
-    <meta property="og:locale" content="fr_BE" />
-    <meta name="twitter:card" content="summary_large_image" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  .about{background:var(--card);border-top:1px solid var(--paper-line);border-bottom:1px solid var(--paper-line);}
+  .about .wrap{max-width:760px;}
+  .avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--navy);flex-shrink:0;border:2px solid var(--paper-line);}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+  .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;}
+  .diff-grid div{border-left:2px solid var(--orange);padding-left:14px;}
+  .diff-grid b{display:block;color:var(--navy);font-size:15px;margin-bottom:3px;}
+  .diff-grid p{font-size:14px;margin:0;}
+
+  .tarifs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;}
+  .tblock{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);padding:26px 28px;}
+  .tblock h3{font-size:17px;margin-bottom:14px;}
+  .trow{display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px dashed var(--paper-line);}
+  .trow:last-child{border-bottom:none;}
+  .trow b{color:var(--navy);font-weight:600;}
+  .tblock.wide{grid-column:1/-1;}
+  .supp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 28px;}
+  .note-box{margin-top:26px;background:#fdf3ea;border:1px solid #f0d8bd;border-radius:8px;padding:14px 18px;font-size:13px;color:#8a5220;}
+  .legal-toggles{display:flex;gap:14px;flex-wrap:wrap;}
+  .legal-details{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);flex:1;min-width:260px;padding:4px 0;}
+  .legal-details summary{list-style:none;cursor:pointer;padding:18px 24px;font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:var(--navy);display:flex;justify-content:space-between;align-items:center;transition:.15s;}
+  .legal-details summary::-webkit-details-marker{display:none;}
+  .legal-details summary::after{content:"+";font-family:'IBM Plex Mono',monospace;font-size:18px;color:var(--orange-deep);}
+  .legal-details[open] summary::after{content:"–";}
+  .legal-details summary:hover{background:#fdf3ea;}
+  .legal-body{padding:0 24px 22px;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
+  .scard{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);padding:28px 26px;}
+  .scard .snum{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--orange-deep);margin-bottom:12px;}
+  .scard h3{font-size:18px;margin-bottom:8px;}
+  .scard p{font-size:13.5px;margin:0;}
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;position:relative;}
+  .process-grid::before{content:"";position:absolute;top:19px;left:6%;right:6%;height:1px;background:var(--paper-line);}
+  .pstep{position:relative;padding:0 18px 0 0;}
+  .pstep .pnum{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;position:relative;z-index:1;margin-bottom:16px;}
+  .pstep h4{font-size:15px;margin-bottom:6px;color:var(--navy);}
+  .pstep p{font-size:13px;margin:0;}
+  .docs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;}
+  .dcard{background:var(--card);border:1px solid var(--paper-line);border-radius:var(--radius);padding:22px 20px;}
+  .dcard .icon{width:38px;height:38px;border-radius:8px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;margin-bottom:14px;}
+  .dcard h4{font-size:15.5px;margin-bottom:6px;}
+  .dcard p{font-size:13px;margin-bottom:12px;}
+  .dcard a{font-size:12.5px;font-weight:600;color:var(--orange-deep);text-decoration:none;}
+
+  .booking{background:var(--navy);color:#fff;position:relative;}
+  .booking .eyebrow{color:#f3b787;}
+  .booking .eyebrow::before{background:var(--orange);}
+  .booking h2{color:#fff;}
+  .booking > .wrap > p{color:#c7d2dc;max-width:560px;}
+  .wizard{background:var(--paper);border-radius:14px;margin-top:36px;color:var(--ink);box-shadow:0 40px 80px -30px rgba(0,0,0,.4);overflow:hidden;}
+  .wizard-head{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;background:var(--card);border-bottom:1px solid var(--paper-line);}
+  .steps{display:flex;gap:6px;}
+  .step-dot{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;background:var(--paper);color:var(--ink-soft);border:1.5px solid var(--paper-line);transition:.2s;cursor:pointer;}
+  .step-dot.active{background:var(--orange);color:#fff;border-color:var(--orange);}
+  .step-dot.done{background:var(--success);color:#fff;border-color:var(--success);}
+  .step-dot.locked{cursor:not-allowed;opacity:.45;}
+  .wizard-body{padding:36px 40px 30px;min-height:340px;}
+  .wstep{display:none;}
+  .wstep.active{display:block;animation:fadein .35s ease;}
+  @keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+  .wstep h3{font-size:21px;margin-bottom:6px;}
+  .wstep .sub{font-size:13.5px;color:var(--ink-soft);margin-bottom:26px;}
+
+  .choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .group-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .group-pill{border:2px solid var(--paper-line);border-radius:12px;padding:20px 16px;cursor:pointer;background:var(--card);text-align:center;transition:.15s;}
+  .group-pill:hover{border-color:var(--orange);}
+  .group-pill.selected{border-color:var(--orange);background:#fdf3ea;}
+  .group-pill b{display:block;font-size:15px;color:var(--navy);margin-bottom:4px;}
+  .group-pill span{font-size:12px;color:var(--ink-soft);}
+  .choice{border:1.5px solid var(--paper-line);border-radius:10px;padding:16px 18px;cursor:pointer;background:var(--card);transition:.15s;}
+  .choice:hover{border-color:var(--orange);background:#fdf3ea;}
+  .choice.selected{border-color:var(--orange);background:#fdf3ea;}
+  .choice b{display:block;font-size:14.5px;color:var(--navy);margin-bottom:3px;}
+  .choice span{font-size:12.5px;color:var(--ink-soft);}
+
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+  .field input, .field select, .field textarea{width:100%;padding:11px 13px;border:1.5px solid var(--paper-line);border-radius:8px;font-family:'IBM Plex Sans',sans-serif;font-size:14.5px;background:var(--card);color:var(--ink);}
+  .field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--orange);outline-offset:1px;border-color:var(--orange);}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px;}
+  .cat{border:1.5px solid var(--paper-line);border-radius:8px;padding:12px;text-align:center;background:var(--card);cursor:pointer;transition:.15s;}
+  .cat:hover{border-color:var(--orange);background:#fdf3ea;}
+  .cat.selected{border-color:var(--orange);background:#fdf3ea;}
+  .cat b{display:block;font-size:13.5px;color:var(--navy);}
+  .cat span{font-size:11.5px;color:var(--ink-soft);}
+
+  .included-box{background:#eef2f0;border:1px dashed #cdd9d2;border-radius:8px;padding:12px 16px;font-size:12.5px;color:var(--ink-soft);margin-bottom:20px;}
+
+  .supp-row{display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--paper-line);border-radius:8px;padding:9px 14px;background:var(--card);margin-bottom:8px;}
+  .supp-row .sname{font-size:13.5px;}
+  .supp-row .sprice{font-size:11.5px;color:var(--ink-soft);}
+  .stepper{display:flex;align-items:center;gap:8px;}
+  .stepper button{width:24px;height:24px;border-radius:6px;border:1px solid var(--paper-line);background:#fff;cursor:pointer;font-size:14px;color:var(--navy);line-height:1;}
+  .stepper span{font-family:'IBM Plex Mono',monospace;font-size:13px;min-width:14px;text-align:center;}
+  .toggle-row{display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--paper-line);border-radius:8px;padding:12px 16px;background:var(--card);margin-top:6px;}
+  .toggle-row input{width:18px;height:18px;}
+
+  .price-live{position:sticky;bottom:0;margin-top:20px;background:var(--navy);color:#fff;border-radius:10px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;}
+  .price-live .amt{font-family:'Fraunces',serif;font-size:24px;}
+  .price-live .lbl{font-size:12px;color:#c7d2dc;text-transform:uppercase;letter-spacing:.05em;}
+
+  .slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .slot{border:1.5px solid var(--paper-line);border-radius:8px;padding:11px;text-align:center;font-size:13.5px;cursor:pointer;background:var(--card);transition:.15s;}
+  .slot:hover{border-color:var(--orange);background:#fdf3ea;}
+  .slot.selected{border-color:var(--orange);background:#fdf3ea;font-weight:600;color:var(--orange-deep);}
+
+  .recap{background:var(--card);border:1px solid var(--paper-line);border-radius:10px;padding:20px 22px;}
+  .recap-row{display:flex;justify-content:space-between;font-size:13.5px;padding:7px 0;border-bottom:1px dashed var(--paper-line);}
+  .recap-row:last-child{border:none;}
+  .recap-row b{color:var(--navy);}
+  .recap-total{display:flex;justify-content:space-between;padding:12px 0 0;margin-top:8px;border-top:2px solid var(--navy);font-size:16px;}
+  .recap-total b{font-family:'Fraunces',serif;font-size:22px;color:var(--orange-deep);}
+
+  .wizard-foot{display:flex;justify-content:space-between;padding:20px 40px;background:var(--card);border-top:1px solid var(--paper-line);}
+
+  .confirm-screen{text-align:center;padding:20px 10px;}
+  .confirm-screen .badge{width:64px;height:64px;border-radius:50%;background:var(--success);color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 20px;}
+  .confirm-screen .ref{font-family:'IBM Plex Mono',monospace;font-size:14px;background:var(--paper);display:inline-block;padding:6px 14px;border-radius:6px;margin:14px 0;color:var(--navy);}
+
+  footer{background:var(--navy-deep);color:#c7d2dc;padding:52px 0 26px;font-size:13.5px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;}
+  footer a{color:#c7d2dc;text-decoration:none;}
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .foot-brand img{height:34px;width:34px;object-fit:contain;filter:brightness(0) invert(1);}
+  .foot-brand span{font-family:'Fraunces',serif;color:#fff;font-size:18px;}
+  .bottom-line{border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:#8fa0b1;flex-wrap:wrap;gap:10px;}
+
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .tarifs-grid, .docs-grid, .services-grid{grid-template-columns:1fr 1fr;}
+    .process-grid{grid-template-columns:1fr;gap:26px;}
+    .process-grid::before{display:none;}
+    nav.links{display:none;}
+    .diff-grid, .choice-grid, .slot-grid, .field-row, .cat-grid, .supp-grid, .group-grid{grid-template-columns:1fr;}
+    .legal-toggles{flex-direction:column;}
+    .wizard-body{padding:28px 20px;}
+    .hero h1{font-size:32px;}
+  }
+  @media(max-width:600px){
+    .brand .tag{display:none;}
+    .header-actions .btn{padding:10px 14px;font-size:13.5px;}
+    .header-actions .whatsapp{padding:10px;}
+    .header-actions .whatsapp .wa-text{display:none;}
+    .rdv-full{display:none;}
+    .rdv-short{display:inline;}
+    .tarifs-grid, .docs-grid, .services-grid{grid-template-columns:1fr;}
+    .wizard-head{padding:14px 18px;flex-wrap:wrap;gap:8px;}
+    .steps{gap:4px;}
+    .step-dot{width:24px;height:24px;font-size:11px;}
+    .wizard-foot{padding:16px 20px;}
+    .about > .wrap > div:first-child{flex-wrap:wrap;}
+  }
+  @media(max-width:380px){
+    .brand{gap:8px;}
+    .brand img{height:34px;width:34px;}
+    .brand .name{font-size:16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#" class="brand" style="text-decoration:none;">
+      <img src="/logo.png" alt="Logo EXPERTIMMOTC" width="44" height="44">
+      <div class="bt">
+        <span class="name">EXPERTIMMOTC</span>
+        <span class="tag">Expert immobilier — IPI 505091</span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#documents">Rapports</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/32488584848" class="btn whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor" style="flex-shrink:0;"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.605 1.902 6.472L4 29l7.72-1.862A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.818c-1.938 0-3.76-.51-5.34-1.4l-.383-.222-4.58 1.104 1.127-4.463-.25-.396A9.77 9.77 0 0 1 5.182 15c0-5.98 4.84-10.818 10.819-10.818S26.818 9.02 26.818 15 21.98 24.818 16.001 24.818zm5.62-7.98c-.31-.155-1.83-.902-2.113-1.005-.283-.103-.489-.155-.695.155-.207.31-.797 1.005-.977 1.212-.18.207-.36.233-.67.078-.31-.155-1.31-.483-2.496-1.54-.923-.823-1.546-1.84-1.727-2.15-.18-.31-.02-.478.136-.633.14-.14.31-.36.464-.54.155-.18.207-.31.31-.517.103-.207.052-.388-.026-.543-.078-.155-.695-1.677-.953-2.297-.251-.605-.507-.523-.695-.533-.18-.008-.388-.01-.596-.01-.207 0-.543.078-.828.388-.283.31-1.083 1.06-1.083 2.583s1.11 2.996 1.264 3.203c.155.207 2.186 3.34 5.298 4.683.74.32 1.318.512 1.768.655.743.236 1.42.203 1.954.123.596-.089 1.83-.748 2.088-1.47.258-.723.258-1.343.18-1.47-.078-.13-.283-.207-.593-.362z"/></svg><span class="wa-text">WhatsApp</span></a>
+      <a href="#rdv" class="btn"><span class="rdv-full">Prendre rendez-vous</span><span class="rdv-short">RDV</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Brabant wallon · Bruxelles</div>
+      <h1>Des états des lieux et expertises <em>rigoureux</em>, au service de vos dossiers.</h1>
+      <p class="lede">États des lieux, expertises et estimations menés avec la rigueur d'un professionnel qui suit chaque dossier personnellement, de la prise de rendez-vous jusqu'au rapport final.</p>
+      <div class="hero-cta">
+        <a href="#rdv" class="btn">Demander un rendez-vous</a>
+      </div>
+      <div class="trust-row">
+        <div class="t"><b>20+</b><span>Ans d'expérience</span></div>
+        <div class="t"><b>70+</b><span>Communes couvertes</span></div>
+        <div class="t"><b>1</b><span>Interlocuteur, du 1er contact au rapport</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--card);border-top:1px solid var(--paper-line);border-bottom:1px solid var(--paper-line);">
+  <div class="wrap">
+    <div class="eyebrow">Mes services</div>
+    <h2>États des lieux, estimations, expertises</h2>
+    <p style="max-width:600px;">Trois métiers complémentaires, pour vous accompagner à chaque étape de la vie d'un bien — que vous le louiez, le vendiez ou ayez besoin d'un avis technique.</p>
+    <div class="services-grid">
+      <div class="scard">
+        <h3>États des lieux</h3>
+        <p>Entrée et sortie, avec chiffrage complet des dégâts locatifs si nécessaire. Rapport détaillé, photos à l'appui.</p>
+      </div>
+      <div class="scard">
+        <h3>Estimations — vente &amp; location</h3>
+        <p>Analyse comparative de marché et valeur argumentée, que vous prépariez une mise en vente ou une mise en location.</p>
+      </div>
+      <div class="scard">
+        <h3>Expertises</h3>
+        <p>Constat technique et impartial, pour un dossier amiable ou judiciaire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:18px;margin-bottom:22px;">
+      <div class="avatar"><img src="data:image/jpeg;base64,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" alt="Thomas Colenbie, expert immobilier"></div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:4px;">À propos</div>
+        <h2 style="margin:0;">Thomas Colenbie</h2>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:16px;color:var(--ink);">Actif dans le domaine de l'immobilier depuis 20 ans, j'accompagne les propriétaires, locataires, gestionnaires de biens et agences immobilières en assurant des états des lieux précis, impartiaux et conformes aux exigences légales, ainsi que des estimations réalistes et conformes au marché immobilier.</p>
+      <p style="font-size:16px;color:var(--ink);">Ma priorité est d'offrir un service professionnel, rapide et transparent, afin de faciliter la relation entre les parties et de prévenir d'éventuels litiges. Mon objectif est simple : faciliter vos démarches, prévenir les litiges et établir une relation de confiance entre toutes les parties.</p>
+      <p style="font-size:16px;color:var(--ink);">J'accompagne également les propriétaires dans la vente et la location de leur bien, avec la même exigence de rigueur et de transparence — de l'estimation initiale jusqu'à la conclusion de la transaction.</p>
+      <div class="diff-grid">
+        <div><b>Disponibilité réelle</b><p>Vous parlez directement à la personne qui gère votre dossier, du rendez-vous au rapport final.</p></div>
+        <div><b>Suivi personnalisé</b><p>Chaque dossier est traité individuellement, avec une attention portée aux besoins spécifiques de chaque partie.</p></div>
+        <div><b>Réseau mobilisable</b><p>20 ans de contacts dans le secteur, activés au bénéfice de vos dossiers quand c'est pertinent.</p></div>
+      </div>
+      <div class="tblock" style="margin-top:26px;">
+        <h3 style="font-size:15.5px;">En bref, je vous propose</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:14px;color:var(--ink-soft);">
+          <li style="padding:5px 0 5px 18px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--orange);">—</span>
+            Des états des lieux et des expertises détaillés, enrichis de photos pour une documentation complète.
+          </li>
+          <li style="padding:5px 0 5px 18px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--orange);">—</span>
+            Un rapport clair et professionnel, rédigé dans un langage accessible pour éviter toute ambiguïté.
+          </li>
+          <li style="padding:5px 0 5px 18px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--orange);">—</span>
+            Une tarification transparente et compétitive, sans mauvaises surprises.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demarche" style="background:var(--card);border-top:1px solid var(--paper-line);border-bottom:1px solid var(--paper-line);">
+  <div class="wrap">
+    <div class="eyebrow">Comment ça se passe</div>
+    <h2>Du rendez-vous au rapport, en 4 étapes</h2>
+    <div class="process-grid">
+      <div class="pstep">
+        <div class="pnum">1</div>
+        <h4>Demande de rendez-vous</h4>
+        <p>Via le formulaire, WhatsApp ou par téléphone. Confirmation sous 24h.</p>
+      </div>
+      <div class="pstep">
+        <div class="pnum">2</div>
+        <h4>Visite et constat</h4>
+        <p>Le bien est relevé pièce par pièce, photos à l'appui.</p>
+      </div>
+      <div class="pstep">
+        <div class="pnum">3</div>
+        <h4>Rédaction du rapport</h4>
+        <p>Rapport clair et complet, rédigé avec soin.</p>
+      </div>
+      <div class="pstep" style="padding-right:0;">
+        <div class="pnum">4</div>
+        <h4>Remise du document</h4>
+        <p>Après règlement, le rapport finalisé vous est transmis, prêt à l'usage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="wrap">
+    <div class="eyebrow">Tarifs</div>
+    <h2>Des honoraires clairs, sans surprises</h2>
+    <p style="max-width:600px;">Le tarif de base dépend du type de bien ; les pièces et équipements supplémentaires s'ajoutent ensuite. Utilisez le simulateur dans le formulaire de rendez-vous pour obtenir une estimation immédiate.</p>
+
+    <div class="tarifs-grid">
+      <div class="tblock">
+        <h3>État des lieux — Appartement</h3>
+        <div class="trow"><span>Kot / chambre étudiant</span><b>85,00 €</b></div>
+        <div class="trow"><span>Studio</span><b>135,00 €</b></div>
+        <div class="trow"><span>1 chambre</span><b>145,00 €</b></div>
+      </div>
+      <div class="tblock">
+        <h3>État des lieux — Maison</h3>
+        <div class="trow"><span>2 façades</span><b>165,00 €</b></div>
+        <div class="trow"><span>3 façades</span><b>185,00 €</b></div>
+        <div class="trow"><span>Villa 4 façades</span><b>210,00 €</b></div>
+      </div>
+      <div class="tblock wide">
+        <h3>Suppléments (au-delà du forfait de base)</h3>
+        <div class="supp-grid">
+          <div class="trow"><span>Chambre / bureau / dressing</span><b>22,00 €</b></div>
+          <div class="trow"><span>Salle de bain / douche</span><b>22,00 €</b></div>
+          <div class="trow"><span>WC / Cave</span><b>12,00 €</b></div>
+          <div class="trow"><span>Buanderie</span><b>16,00 €</b></div>
+          <div class="trow"><span>Garage</span><b>15 – 35 €</b></div>
+          <div class="trow"><span>Grenier de rangement</span><b>12,00 €</b></div>
+          <div class="trow"><span>Grenier aménagé (par pièce)</span><b>18,00 €</b></div>
+          <div class="trow"><span>Terrasse / balcon</span><b>12,00 €</b></div>
+          <div class="trow"><span>Terrasse &gt; 40 m²</span><b>22,00 €</b></div>
+          <div class="trow"><span>Jardin</span><b>35,00 €</b></div>
+          <div class="trow"><span>Bien meublé</span><b>+25 %</b></div>
+        </div>
+      </div>
+      <div class="tblock">
+        <h3>Bureau / commerce &amp; prestige</h3>
+        <div class="trow"><span>Open space</span><b>150 € + 1,21 €/m²</b></div>
+        <div class="trow"><span>Bien de prestige</span><b>Sur devis</b></div>
+        <div class="trow"><span>Mission contre-expert / une seule partie</span><b>+100 %</b></div>
+      </div>
+      <div class="tblock">
+        <h3>Estimation &amp; expertise</h3>
+        <div class="trow"><span>Estimation, sans rapport écrit</span><b>300 €</b></div>
+        <div class="trow"><span>Estimation, avec rapport écrit</span><b>à partir de 400 €</b></div>
+        <div class="trow"><span>Expertise</span><b>Sur devis</b></div>
+      </div>
+      <div class="tblock">
+        <h3>Vente &amp; location</h3>
+        <div class="trow"><span>Vente</span><b>3 % HTVA du prix</b></div>
+        <div class="trow"><span>Location</span><b>1 mois de loyer HTVA</b></div>
+      </div>
+    </div>
+    <div class="note-box">Tarifs TVAC, par partie (locataire/bailleur), sur base d'un hall d'entrée, hall de nuit, salon, salle à manger, cuisine, un WC, une chambre et une salle d'eau. Un ajustement est appliqué si la description du bien s'avère incorrecte. Le tarif de l'estimation avec rapport écrit varie selon les caractéristiques du bien ; les honoraires de vente et de location s'appliquent au mandat de courtage.</div>
+  </div>
+</section>
+
+<section id="documents" style="background:var(--card);border-top:1px solid var(--paper-line);border-bottom:1px solid var(--paper-line);">
+  <div class="wrap">
+    <div class="eyebrow">Rapports</div>
+    <h2>Des rapports professionnels, pensés pour être exploitables</h2>
+    <div class="docs-grid">
+      <div class="dcard"><div class="icon">EDL</div><h4>État des lieux d'entrée</h4><p>Relevé des compteurs, description détaillée de l'état et des équipements, en y joignant des photos prises le jour de la visite.</p></div>
+      <div class="dcard"><div class="icon">EDS</div><h4>État des lieux de sortie</h4><p>Comparatif entrant/sortant et chiffrage complet des dégâts locatifs.</p></div>
+      <div class="dcard"><div class="icon">EXP</div><h4>Rapport d'expertise</h4><p>Constat technique argumenté, format adapté aux dossiers amiables et judiciaires.</p></div>
+      <div class="dcard"><div class="icon">EST</div><h4>Rapport d'estimation</h4><p>Analyse comparative de marché et valeur argumentée, pour une vente ou une location.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="rdv">
+  <div class="wrap">
+    <div class="eyebrow">Prise de rendez-vous</div>
+    <h2>Demandez votre rendez-vous en ligne</h2>
+    <p>Répondez à quelques questions sur votre bien et vos disponibilités — nous vous recontactons rapidement pour confirmer le rendez-vous.</p>
+
+    <form class="wizard" id="wizard">
+      <div class="wizard-head">
+        <span class="mono" style="font-size:12px;color:var(--ink-soft);">ÉTAPE <span id="stepLabel">1</span>/<span id="stepMax">5</span></span>
+        <div class="steps" id="stepsDots"></div>
+      </div>
+
+      <div class="wizard-body">
+
+        <div class="wstep active" data-step="1">
+          <h3>Quel type de prestation ?</h3>
+          <div class="sub">Choisissez d'abord une catégorie.</div>
+          <div class="group-grid" id="groupChoices">
+            <div class="group-pill" data-group="edl">
+              <b>État des lieux</b>
+              <span>Entrée ou sortie de bail</span>
+            </div>
+            <div class="group-pill" data-group="estim">
+              <b>Estimations &amp; expertises</b>
+              <span>Rapport, avis technique</span>
+            </div>
+            <div class="group-pill" data-group="courtage">
+              <b>Vente &amp; location</b>
+              <span>Mandat de courtage</span>
+            </div>
+          </div>
+          <div class="sub" id="subChoiceLabel" style="display:none;margin-top:22px;">Précisez votre besoin.</div>
+          <div class="choice-grid" id="typeChoices" style="margin-top:12px;"></div>
+        </div>
+
+        <div class="wstep" data-step="2">
+          <h3>Le bien concerné</h3>
+          <div class="sub" id="step2sub">Quelques informations essentielles suffisent.</div>
+          <div class="field">
+            <label>Adresse du bien</label>
+            <input type="text" id="adresse" placeholder="Rue, numéro, code postal, commune">
+          </div>
+
+          <label style="display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px;">Vous êtes</label>
+          <div class="choice-grid" id="qualiteChoices" style="margin-bottom:22px;">
+            <div class="choice" data-qualite="locataire"><b>Locataire</b></div>
+            <div class="choice" data-qualite="proprietaire"><b>Propriétaire</b></div>
+            <div class="choice" data-qualite="autre"><b>Autre</b></div>
+          </div>
+
+          <div id="edlCatBlock" style="display:none;">
+            <label style="display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px;">Catégorie du bien</label>
+            <div class="cat-grid" id="catGrid"></div>
+            <div class="field" id="bureauSurfaceField" style="display:none;">
+              <label>Surface (m²)</label>
+              <input type="number" id="surfaceBureau" placeholder="Ex : 120">
+            </div>
+          </div>
+
+          <div id="genericBienBlock" style="display:none;" class="field-row">
+            <div class="field"><label>Type de bien</label>
+              <select id="typeBienGeneric">
+                <option value="appartement">Appartement</option>
+                <option value="maison">Maison</option>
+                <option value="commerce">Bien commercial</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="field"><label>Surface approximative (m²)</label><input type="number" id="surfaceGeneric" placeholder="Ex : 85"></div>
+          </div>
+        </div>
+
+        <div class="wstep" data-step="3">
+          <h3>Pièces et équipements</h3>
+          <div class="sub">Le forfait de base couvre déjà certaines pièces. Ajoutez ici ce qui dépasse ce forfait.</div>
+          <div class="included-box">Inclus dans le forfait de base : hall d'entrée, hall de nuit, salon, salle à manger, cuisine, 1 WC, 1 chambre, 1 salle d'eau.</div>
+          <div id="suppList"></div>
+          <div class="toggle-row">
+            <span style="font-size:13.5px;">Bien meublé <span style="color:var(--ink-soft);font-size:11.5px;">(+25 % sur le total)</span></span>
+            <input type="checkbox" id="meubleToggle">
+          </div>
+          <div class="price-live">
+            <span class="lbl">Estimation indicative</span>
+            <span class="amt" id="liveTotal">— €</span>
+          </div>
+          <p style="font-size:11.5px;color:var(--ink-soft);margin-top:8px;">Montant indicatif calculé sur base de vos réponses. Le tarif définitif est confirmé par Thomas après vérification des caractéristiques réelles du bien (le garage, par exemple, est facturé entre 15 € et 35 € selon sa taille).</p>
+        </div>
+
+        <div class="wstep" data-step="docs">
+          <h3>Documents à transmettre</h3>
+          <div class="sub">Si vous en disposez déjà, cochez les documents concernés et joignez-les — cela accélère la préparation de votre dossier.</div>
+          <div id="docList"></div>
+          <div class="field" id="bailDateField" style="display:none;margin-top:14px;">
+            <label>Date de début du bail (si connue)</label>
+            <input type="date" id="bailDate">
+          </div>
+          <div class="field" style="margin-top:16px;">
+            <label>Remarque sur ces documents (facultatif)</label>
+            <textarea id="docNote" rows="2" placeholder="Ex : le bail sera transmis séparément par email"></textarea>
+          </div>
+        </div>
+
+        <div class="wstep" data-step="4">
+          <h3>Quand êtes-vous disponible ?</h3>
+          <div class="sub">Nous confirmons la date exacte avec vous par téléphone si besoin.</div>
+          <div class="field">
+            <label>Date souhaitée</label>
+            <input type="date" id="dateRdv">
+          </div>
+          <label style="display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px;">Créneau préféré</label>
+          <div class="slot-grid" id="slotGrid">
+            <div class="slot" data-value="matin">Matin</div>
+            <div class="slot" data-value="apres-midi">Après-midi</div>
+            <div class="slot" data-value="soir">Fin de journée</div>
+          </div>
+        </div>
+
+        <div class="wstep" data-step="5">
+          <h3>Vos coordonnées</h3>
+          <div class="sub">Pour vous envoyer la confirmation et le rappel.</div>
+          <div class="field-row">
+            <div class="field"><label>Nom complet</label><input type="text" id="nom" placeholder="Prénom et nom"></div>
+            <div class="field"><label>Téléphone (SMS)</label><input type="tel" id="tel" placeholder="+32 4XX XX XX XX"></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" id="email" placeholder="vous@exemple.be"></div>
+          <div class="field"><label>Remarque (facultatif)</label><textarea id="remarque" rows="2" placeholder="Précision utile pour le rendez-vous"></textarea></div>
+          <div class="recap" id="recapBox"></div>
+          <div id="submitError" style="display:none;margin-top:14px;background:#fdeaea;border:1px solid #f0b8b8;border-radius:8px;padding:12px 16px;font-size:13px;color:#a03030;">Une erreur est survenue et votre demande n'a pas pu être envoyée. Réessayez, ou contactez-nous directement par téléphone ou WhatsApp.</div>
+          <div class="toggle-row" style="align-items:flex-start;margin-top:16px;">
+            <span style="font-size:12.5px;line-height:1.5;">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la <a href="#confidentialite" style="color:var(--orange-deep);">politique de confidentialité</a>.</span>
+            <input type="checkbox" id="rgpdConsent" style="margin-top:2px;">
+          </div>
+        </div>
+
+        <div class="wstep" data-step="confirm">
+          <div class="confirm-screen">
+            <div class="badge">✓</div>
+            <h3>Demande enregistrée</h3>
+            <p>Votre demande a bien été enregistrée. Thomas la traite personnellement et vous recontacte sous 24h pour confirmer le rendez-vous.</p>
+            <div class="ref" id="refBox">DOSSIER N° —</div>
+            <p style="font-size:13px;">Une question en attendant ? Contactez-nous directement par téléphone ou WhatsApp.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wizard-foot">
+        <button type="button" class="btn ghost" id="prevBtn">← Précédent</button>
+        <button type="button" class="btn" id="nextBtn">Continuer →</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="legal" style="background:var(--card);border-top:1px solid var(--paper-line);padding:64px 0;">
+  <div class="wrap">
+    <div class="legal-toggles">
+      <details class="legal-details">
+        <summary>Mentions légales</summary>
+        <div class="legal-body">
+          <p style="font-size:13px;margin-bottom:10px;">EXPERTIMMOTC — Thomas Colenbie, expert immobilier, entreprise individuelle.</p>
+          <div class="trow"><span>N° d'entreprise (BCE)</span><b>0885.557.342</b></div>
+          <div class="trow"><span>N° TVA</span><b>BE 0885.557.342</b></div>
+          <div class="trow"><span>Agréation IPI</span><b>505091</b></div>
+          <div class="trow"><span>Assurance RC pro.</span><b>AXA Belgium SA — n° 730.390.160</b></div>
+          <div class="trow"><span>Siège</span><b>Rue François Lebon 46, 1400 Nivelles</b></div>
+          <p style="font-size:12px;margin-top:12px;">Soumis au Code de déontologie de l'Institut professionnel des agents immobiliers (IPI) — <a href="https://www.ipi.be" style="color:var(--orange-deep);">www.ipi.be</a>. En cas de litige, le consommateur peut s'adresser au Service de Médiation pour le Consommateur, rue Ducale 43, 1000 Bruxelles — <a href="https://www.mediationconsommateur.be" style="color:var(--orange-deep);">www.mediationconsommateur.be</a>, ou à la Commission des litiges de l'IPI.</p>
+        </div>
+      </details>
+      <details class="legal-details" id="confidentialite">
+        <summary>Politique de confidentialité (RGPD)</summary>
+        <div class="legal-body">
+          <p style="font-size:13px;margin-bottom:10px;">Responsable du traitement : Thomas Colenbie (EXPERTIMMOTC).</p>
+          <p style="font-size:13px;margin-bottom:6px;"><b style="color:var(--navy);">Données collectées</b> — nom, téléphone, email, adresse du bien et informations liées à votre demande de rendez-vous.</p>
+          <p style="font-size:13px;margin-bottom:6px;"><b style="color:var(--navy);">Finalité</b> — traiter votre demande, établir un devis ou rapport, envoyer les confirmations et rappels de rendez-vous.</p>
+          <p style="font-size:13px;margin-bottom:6px;"><b style="color:var(--navy);">Conservation</b> — le temps nécessaire au traitement du dossier et aux obligations légales, puis suppression.</p>
+          <p style="font-size:13px;margin-bottom:6px;"><b style="color:var(--navy);">Destinataires</b> — Thomas Colenbie uniquement, et le cas échéant les prestataires techniques utilisés pour l'envoi des confirmations email/SMS.</p>
+          <p style="font-size:13px;">Vos données ne sont ni vendues ni utilisées à des fins publicitaires. Vous disposez d'un droit d'accès, de rectification et d'effacement, à exercer par email à expertimmotc@gmail.com.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand"><span>EXPERTIMMOTC</span></div>
+      <p style="margin:0;max-width:280px;">Rue François Lebon 46, 1400 Nivelles<br>+32 488 58 48 48<br>expertimmotc@gmail.com</p>
+      <a href="https://wa.me/32488584848" class="btn whatsapp" target="_blank" rel="noopener" style="margin-top:14px;"><svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor" style="flex-shrink:0;"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.605 1.902 6.472L4 29l7.72-1.862A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.627 28 15S22.629 3 16.001 3zm0 21.818c-1.938 0-3.76-.51-5.34-1.4l-.383-.222-4.58 1.104 1.127-4.463-.25-.396A9.77 9.77 0 0 1 5.182 15c0-5.98 4.84-10.818 10.819-10.818S26.818 9.02 26.818 15 21.98 24.818 16.001 24.818zm5.62-7.98c-.31-.155-1.83-.902-2.113-1.005-.283-.103-.489-.155-.695.155-.207.31-.797 1.005-.977 1.212-.18.207-.36.233-.67.078-.31-.155-1.31-.483-2.496-1.54-.923-.823-1.546-1.84-1.727-2.15-.18-.31-.02-.478.136-.633.14-.14.31-.36.464-.54.155-.18.207-.31.31-.517.103-.207.052-.388-.026-.543-.078-.155-.695-1.677-.953-2.297-.251-.605-.507-.523-.695-.533-.18-.008-.388-.01-.596-.01-.207 0-.543.078-.828.388-.283.31-1.083 1.06-1.083 2.583s1.11 2.996 1.264 3.203c.155.207 2.186 3.34 5.298 4.683.74.32 1.318.512 1.768.655.743.236 1.42.203 1.954.123.596-.089 1.83-.748 2.088-1.47.258-.723.258-1.343.18-1.47-.078-.13-.283-.207-.593-.362z"/></svg><span class="wa-text">WhatsApp</span></a>
+    </div>
+    <div>
+      <p style="margin:0 0 6px;color:#fff;font-weight:600;">Zone d'intervention</p>
+      <p style="margin:0;max-width:260px;">Brabant wallon et Bruxelles — plus de 70 communes.</p>
+    </div>
+    <div>
+      <p style="margin:0 0 6px;color:#fff;font-weight:600;">Navigation</p>
+      <p style="margin:0;"><a href="#apropos">À propos</a><br><a href="#tarifs">Tarifs</a><br><a href="#rdv">Rendez-vous</a><br><a href="#legal">Mentions légales</a><br><a href="#confidentialite">Confidentialité</a></p>
+    </div>
+  </div>
+  <div class="wrap bottom-line">
+    <span>© 2026 EXPERTIMMOTC — Thomas Colenbie — IPI 505091</span>
+    <span>www.expertimmotc.be</span>
+  </div>
+</footer>
+
+<script>
+const BASE = {
+  kot:      {label:"Kot / chambre étudiant", price:85},
+  studio:   {label:"Studio", price:135},
+  appart:   {label:"Appartement (1 chambre)", price:145},
+  maison2:  {label:"Maison 2 façades", price:165},
+  maison3:  {label:"Maison 3 façades", price:185},
+  villa4:   {label:"Villa 4 façades", price:210},
+  bureau:   {label:"Bureau / commerce", priceBase:150, perM2:1.21},
+  prestige: {label:"Bien de prestige", price:null}
+};
+const SUPPLEMENTS = [
+  {key:'chambre', label:'Chambre / bureau / dressing suppl.', price:22},
+  {key:'sdb', label:'Salle de bain / douche suppl.', price:22},
+  {key:'wc_cave', label:'WC / Cave suppl.', price:12},
+  {key:'buanderie', label:'Buanderie', price:16},
+  {key:'garage', label:'Garage', price:25, note:'15–35 €'},
+  {key:'grenier_range', label:'Grenier de rangement', price:12},
+  {key:'grenier_amenage', label:'Grenier aménagé (par pièce)', price:18},
+  {key:'terrasse', label:'Terrasse / balcon', price:12},
+  {key:'terrasse_grande', label:'Terrasse > 40 m²', price:22},
+  {key:'jardin', label:'Jardin', price:35}
+];
+
+const DOC_TYPES = [
+  {key:'bail', label:'Bail'},
+  {key:'edl_entree', label:"État des lieux d'entrée (pour préparer la sortie)"},
+  {key:'plans', label:'Plans du bien'},
+  {key:'autres', label:'Autres documents'}
+];
+function escapeHTML(str){
+  const d = document.createElement('div');
+  d.textContent = str==null ? '' : String(str);
+  return d.innerHTML;
+}
+const state = { type:null, adresse:'', qualite:null, category:null, surfaceBureau:'', typeBienGeneric:'appartement', surfaceGeneric:'', supp:{}, meuble:false, documents:{}, docNote:'', bailDate:'', date:'', slot:null, nom:'', tel:'', email:'', remarque:'' };
+let step = 1;
+let maxStepIndex = 0;
+const isEDL = () => state.type === 'edl_entrant' || state.type === 'edl_sortant';
+const isEstim = () => state.type === 'estimation_sans' || state.type === 'estimation_avec';
+const isCourtage = () => state.type === 'mise_en_vente' || state.type === 'mise_en_location';
+const GROUPS = {
+  edl: [
+    {value:'edl_entrant', label:"État des lieux d'entrée", hint:"Bien loué — entrée du locataire"},
+    {value:'edl_sortant', label:"État des lieux de sortie", hint:"Bien loué — fin de bail"}
+  ],
+  estim: [
+    {value:'estimation_sans', label:"Estimation, sans rapport écrit", hint:"300 €"},
+    {value:'estimation_avec', label:"Estimation, avec rapport écrit", hint:"À partir de 400 €"},
+    {value:'expertise', label:"Expertise", hint:"Litige, sinistre, dossier judiciaire — sur devis"}
+  ],
+  courtage: [
+    {value:'mise_en_vente', label:"Mise en vente", hint:"Honoraires : 3 % HTVA du prix"},
+    {value:'mise_en_location', label:"Mise en location", hint:"Honoraires : 1 mois de loyer HTVA"}
+  ]
+};
+
+document.getElementById('groupChoices').addEventListener('click', e=>{
+  const g = e.target.closest('.group-pill'); if(!g) return;
+  document.querySelectorAll('.group-pill').forEach(x=>x.classList.remove('selected'));
+  g.classList.add('selected');
+  state.type = null;
+  maxStepIndex = 0;
+  const container = document.getElementById('typeChoices');
+  container.innerHTML = GROUPS[g.dataset.group].map(o=>
+    `<div class="choice" data-value="${o.value}"><b>${o.label}</b><span>${o.hint}</span></div>`
+  ).join('');
+  document.getElementById('subChoiceLabel').style.display = 'block';
+});
+
+// build category grid
+const catGrid = document.getElementById('catGrid');
+Object.entries(BASE).forEach(([key,b])=>{
+  const el = document.createElement('div');
+  el.className='cat'; el.dataset.cat=key;
+  const priceTxt = b.price!=null ? (b.price+' €') : (b.priceBase!=null ? (b.priceBase+'€ + '+b.perM2+'€/m²') : 'Sur devis');
+  el.innerHTML = `<b>${b.label}</b><span>${priceTxt}</span>`;
+  catGrid.appendChild(el);
+});
+catGrid.addEventListener('click', e=>{
+  const c = e.target.closest('.cat'); if(!c) return;
+  document.querySelectorAll('.cat').forEach(x=>x.classList.remove('selected'));
+  c.classList.add('selected');
+  state.category = c.dataset.cat;
+  document.getElementById('bureauSurfaceField').style.display = (state.category==='bureau') ? 'block' : 'none';
+});
+
+document.getElementById('qualiteChoices').addEventListener('click', e=>{
+  const c = e.target.closest('.choice'); if(!c) return;
+  document.querySelectorAll('#qualiteChoices .choice').forEach(x=>x.classList.remove('selected'));
+  c.classList.add('selected');
+  state.qualite = c.dataset.qualite;
+});
+
+// build document list
+const docList = document.getElementById('docList');
+function relevantDocTypes(){
+  return DOC_TYPES.filter(d => d.key !== 'edl_entree' || state.type === 'edl_sortant');
+}
+function buildDocList(){
+  const currentKeys = relevantDocTypes().map(d=>d.key);
+  Object.keys(state.documents).forEach(k=>{ if(!currentKeys.includes(k)) delete state.documents[k]; });
+  docList.innerHTML = '';
+  relevantDocTypes().forEach(d=>{
+    const row = document.createElement('div');
+    row.className='supp-row';
+    row.style.flexDirection='column'; row.style.alignItems='stretch'; row.style.gap='8px';
+    const checked = state.documents[d.key] ? 'checked' : '';
+    row.innerHTML = `<label style="display:flex;align-items:center;gap:8px;font-size:13.5px;cursor:pointer;">
+        <input type="checkbox" class="docCheck" data-key="${d.key}" ${checked}> ${d.label}
+      </label>
+      <input type="file" class="docFile" data-key="${d.key}" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" style="display:${checked?'block':'none'};">`;
+    docList.appendChild(row);
+  });
+}
+buildDocList();
+const docHint = document.createElement('div');
+docHint.className = 'included-box';
+docHint.style.marginTop = '14px';
+docHint.textContent = "Ces documents nous aident à préparer votre dossier plus vite. La transmission effective se fait par email une fois votre demande confirmée — mentionnez votre numéro de dossier en objet.";
+docList.parentNode.insertBefore(docHint, docList.nextSibling);
+docList.addEventListener('change', e=>{
+  if(e.target.classList.contains('docCheck')){
+    const key = e.target.dataset.key;
+    const fileInput = docList.querySelector(`.docFile[data-key="${key}"]`);
+    fileInput.style.display = e.target.checked ? 'block' : 'none';
+    if(e.target.checked){ state.documents[key] = state.documents[key] || []; }
+    else { delete state.documents[key]; fileInput.value=''; }
+  }
+  if(e.target.classList.contains('docFile')){
+    const key = e.target.dataset.key;
+    state.documents[key] = Array.from(e.target.files).map(f=>f.name);
+  }
+});
+
+// build supplement list
+const suppList = document.getElementById('suppList');
+SUPPLEMENTS.forEach(s=>{
+  const row = document.createElement('div');
+  row.className='supp-row';
+  row.innerHTML = `<div><div class="sname">${s.label}</div><div class="sprice">${s.note||(s.price+' € / unité')}</div></div>
+    <div class="stepper"><button type="button" class="minus" data-key="${s.key}">−</button><span class="cnt" data-cnt="${s.key}">0</span><button type="button" class="plus" data-key="${s.key}">+</button></div>`;
+  suppList.appendChild(row);
+});
+suppList.addEventListener('click', e=>{
+  const btn = e.target.closest('button'); if(!btn) return;
+  const key = btn.dataset.key;
+  let v = state.supp[key]||0;
+  if(btn.classList.contains('plus')) v++;
+  if(btn.classList.contains('minus')) v = Math.max(0,v-1);
+  state.supp[key]=v;
+  suppList.querySelector(`.cnt[data-cnt="${key}"]`).textContent=v;
+  updateLiveTotal();
+});
+document.getElementById('meubleToggle').addEventListener('change', e=>{ state.meuble = e.target.checked; updateLiveTotal(); });
+
+function computeEDLTotal(){
+  const base = state.category ? BASE[state.category] : null;
+  if(!base) return null;
+  let total;
+  if(base.price!=null) total = base.price;
+  else if(base.priceBase!=null) total = base.priceBase + (parseFloat(state.surfaceBureau)||0)*base.perM2;
+  else return null; // prestige / sur devis
+  SUPPLEMENTS.forEach(s=>{ total += (state.supp[s.key]||0) * s.price; });
+  if(state.meuble) total *= 1.25;
+  return Math.round(total*100)/100;
+}
+function updateLiveTotal(){
+  const t = computeEDLTotal();
+  document.getElementById('liveTotal').textContent = (t!=null) ? (t.toLocaleString('fr-BE',{minimumFractionDigits:2})+' €') : 'Sur devis';
+}
+
+document.getElementById('typeChoices').addEventListener('click', e=>{
+  const c = e.target.closest('.choice'); if(!c) return;
+  document.querySelectorAll('#typeChoices .choice').forEach(x=>x.classList.remove('selected'));
+  c.classList.add('selected');
+  state.type = c.dataset.value;
+  maxStepIndex = 0;
+});
+
+document.getElementById('slotGrid').addEventListener('click', e=>{
+  const s = e.target.closest('.slot'); if(!s) return;
+  document.querySelectorAll('.slot').forEach(x=>x.classList.remove('selected'));
+  s.classList.add('selected');
+  state.slot = s.dataset.value;
+});
+
+function stepSequence(){
+  return isEDL() ? [1,2,3,'docs',4,5] : [1,2,'docs',4,5];
+}
+
+function refreshStep2Blocks(){
+  document.getElementById('edlCatBlock').style.display = isEDL() ? 'block' : 'none';
+  document.getElementById('genericBienBlock').style.display = (!isEDL() && !isEstim()) ? 'grid' : 'none';
+}
+
+function showStep(n){
+  document.querySelectorAll('.wstep').forEach(el=>el.classList.remove('active'));
+  document.querySelector(`.wstep[data-step="${n}"]`).classList.add('active');
+  const seq = stepSequence();
+  const idx = seq.indexOf(n)+1;
+  document.getElementById('stepLabel').textContent = idx;
+  document.getElementById('stepMax').textContent = seq.length;
+  document.getElementById('stepsDots').innerHTML = seq.map((s,i)=>
+    `<div class="step-dot ${i<idx-1?'done':(i===idx-1?'active':'')} ${i>maxStepIndex?'locked':''}" data-jump="${s}">${i+1}</div>`
+  ).join('');
+  document.getElementById('prevBtn').style.visibility = (n===1)?'hidden':'visible';
+  document.getElementById('nextBtn').textContent = (n===5) ? 'Envoyer ma demande →' : 'Continuer →';
+  if(n===2) refreshStep2Blocks();
+  if(n==='docs'){ document.getElementById('bailDateField').style.display = isEDL() ? 'block' : 'none'; buildDocList(); }
+  if(n===3) updateLiveTotal();
+}
+
+document.getElementById('stepsDots').addEventListener('click', e=>{
+  const d = e.target.closest('.step-dot'); if(!d) return;
+  const seq = stepSequence();
+  const target = d.dataset.jump;
+  const jumpVal = target==='docs' ? 'docs' : parseInt(target,10);
+  const targetIdx = seq.indexOf(jumpVal);
+  if(targetIdx > maxStepIndex) return;
+  step = jumpVal;
+  if(step===5) renderRecap();
+  showStep(step);
+});
+
+function validateStep(n){
+  if(n===1 && !state.type){ alert('Merci de sélectionner une prestation précise.'); return false; }
+  if(n===2){
+    state.adresse = document.getElementById('adresse').value.trim();
+    if(!state.adresse){ alert("Merci d'indiquer l'adresse du bien."); return false; }
+    if(!state.qualite){ alert('Merci de préciser si vous êtes locataire, propriétaire ou autre.'); return false; }
+    if(isEDL() && !state.category){ alert('Merci de choisir la catégorie du bien.'); return false; }
+    if(isEDL() && state.category==='bureau'){ state.surfaceBureau = document.getElementById('surfaceBureau').value; }
+    if(!isEDL() && !isEstim()){
+      state.typeBienGeneric = document.getElementById('typeBienGeneric').value;
+      state.surfaceGeneric = document.getElementById('surfaceGeneric').value;
+    }
+  }
+  if(n==='docs'){
+    state.docNote = document.getElementById('docNote').value.trim();
+    if(isEDL()){ state.bailDate = document.getElementById('bailDate').value; }
+  }
+  if(n===4){
+    state.date = document.getElementById('dateRdv').value;
+    if(!state.date || !state.slot){ alert('Merci de choisir une date et un créneau.'); return false; }
+  }
+  if(n===5){
+    state.nom = document.getElementById('nom').value.trim();
+    state.tel = document.getElementById('tel').value.trim();
+    state.email = document.getElementById('email').value.trim();
+    state.remarque = document.getElementById('remarque').value.trim();
+    if(!state.nom || !state.tel || !state.email){ alert('Nom, téléphone et email sont nécessaires pour la confirmation.'); return false; }
+    if(!document.getElementById('rgpdConsent').checked){ alert("Merci d'accepter la politique de confidentialité pour envoyer votre demande."); return false; }
+  }
+  return true;
+}
+
+function renderRecap(){
+  const typeLabels = {edl_entrant:"État des lieux d'entrée", edl_sortant:"État des lieux de sortie", estimation_sans:"Estimation (sans rapport écrit)", estimation_avec:"Estimation (avec rapport écrit)", expertise:"Expertise", mise_en_vente:"Mise en vente", mise_en_location:"Mise en location"};
+  const qualiteLabels = {locataire:'Locataire', proprietaire:'Propriétaire', autre:'Autre (notaire, syndic...)'};
+  let rows = `
+    <div class="recap-row"><span>Prestation</span><b>${typeLabels[state.type]||'—'}</b></div>
+    <div class="recap-row"><span>Vous êtes</span><b>${qualiteLabels[state.qualite]||'—'}</b></div>
+    <div class="recap-row"><span>Adresse</span><b>${escapeHTML(state.adresse)}</b></div>`;
+  let totalTxt = 'Sur devis';
+  if(isEDL()){
+    const b = BASE[state.category];
+    rows += `<div class="recap-row"><span>Catégorie</span><b>${b?b.label:'—'}</b></div>`;
+    const t = computeEDLTotal();
+    if(t!=null) totalTxt = 'env. ' + t.toLocaleString('fr-BE',{minimumFractionDigits:2})+' € TVAC';
+  } else if(isEstim()){
+    totalTxt = state.type==='estimation_avec' ? 'à partir de 400 € TVAC' : '300 € TVAC';
+  } else if(isCourtage()){
+    totalTxt = state.type==='mise_en_vente' ? '3 % HTVA du prix de vente' : '1 mois de loyer HTVA';
+  } else {
+    rows += `<div class="recap-row"><span>Type / surface</span><b>${state.typeBienGeneric} — ${state.surfaceGeneric||'?'} m²</b></div>`;
+  }
+  const docKeys = Object.keys(state.documents);
+  const docsTxt = docKeys.length
+    ? docKeys.map(k=>DOC_TYPES.find(d=>d.key===k).label + (state.documents[k].length? ' ('+state.documents[k].length+' fichier(s))':'')).join(', ')
+    : 'Aucun pour l\'instant';
+  rows += `<div class="recap-row"><span>Documents</span><b>${docsTxt}</b></div>`;
+  if(isEDL() && state.bailDate){ rows += `<div class="recap-row"><span>Début du bail</span><b>${state.bailDate}</b></div>`; }
+  rows += `<div class="recap-row"><span>Date souhaitée</span><b>${state.date} (${state.slot||'—'})</b></div>`;
+  rows += `<div class="recap-total"><span>Estimation indicative</span><b>${totalTxt}</b></div>`;
+  rows += `<p style="font-size:11px;color:var(--ink-soft);margin-top:6px;">Montant indicatif, confirmé par Thomas avant intervention.</p>`;
+  document.getElementById('recapBox').innerHTML = rows;
+}
+
+document.getElementById('nextBtn').addEventListener('click', async ()=>{
+  if(!validateStep(step)) return;
+  const seq = stepSequence();
+  const idx = seq.indexOf(step);
+  if(step===5){
+    document.getElementById('submitError').style.display = 'none';
+    const btn = document.getElementById('nextBtn');
+    btn.disabled = true; btn.textContent = 'Envoi en cours...';
+    await submitBooking();
+    return;
+  }
+  step = seq[idx+1];
+  maxStepIndex = Math.max(maxStepIndex, idx+1);
+  if(step===5) renderRecap();
+  showStep(step);
+});
+
+document.getElementById('prevBtn').addEventListener('click', ()=>{
+  const seq = stepSequence();
+  const idx = seq.indexOf(step);
+  if(idx>0){ step = seq[idx-1]; showStep(step); }
+});
+
+const MAKE_WEBHOOK_URL = 'https://hook.eu1.make.com/mrbl516sm5v7nfybr6tpfzbwz0wj8knx';
+
+async function submitBooking(){
+  const ref = 'RDV-' + new Date().getFullYear().toString().slice(2) + '-' + Math.floor(1000+Math.random()*9000);
+  const booking = { ...state, ref, estimation: computeEDLTotal(), createdAt: new Date().toISOString(), status:'nouvelle' };
+  let saved = false;
+  try{
+    const res = await fetch(MAKE_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(booking)
+    });
+    saved = res.ok;
+  }catch(err){ console.error("Erreur d'envoi au webhook", err); saved = false; }
+
+  // Sauvegarde locale annexe (utile uniquement pendant les tests dans Claude, sans impact sur le résultat)
+  try{ await window.storage.set('rdv:'+ref, JSON.stringify(booking), true); }catch(e){}
+
+  if(!saved){
+    const errBox = document.getElementById('submitError');
+    errBox.style.display = 'block';
+    document.getElementById('nextBtn').disabled = false;
+    document.getElementById('nextBtn').textContent = 'Réessayer l\'envoi →';
+    return;
+  }
+
+  document.getElementById('refBox').textContent = 'DOSSIER N° ' + ref;
+  document.querySelectorAll('.wstep').forEach(el=>el.classList.remove('active'));
+  document.querySelector('.wstep[data-step="confirm"]').classList.add('active');
+  document.querySelector('.wizard-foot').style.display='none';
+  document.querySelector('.wizard-head').style.display='none';
+}
+
+showStep(1);
+</script>
+</body>
 </html>
